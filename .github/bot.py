@@ -65,9 +65,7 @@ def get_kernel_versions():
     sublevel=""
 
     try:
-        current_work=os.getcwd()
-        os.chdir(current_work+"/kernel_workspace/common")
-        with open("./Makefile",'r') as file:
+        with open("./kernel_workspace/common/Makefile",'r') as file:
             for line in file:
                 if line.startswith("VERSION"):
                     version = line.split('=')[1].strip()
