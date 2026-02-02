@@ -117,7 +117,7 @@ jobs:
         id: ksu_version
         run: |
           # 进入内核工作目录
-          cd kernel_workspace
+          cd kernel_workspace/common
           if [[ "${{ env.KERNELSU }}" == "true" ]]; then
             curl -LSs "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/main/kernel/setup.sh" | bash -s builtin
           fi
