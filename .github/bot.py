@@ -21,7 +21,6 @@ CHAT_ID = int(os.environ.get("CHAT_ID"))
 RUN_URL = os.environ.get("RUN_URL")
 BOT_CI_SESSION = os.environ.get("BOT_CI_SESSION")
 MSG_TEMPLATE = """
-```
 **New Build Published!**
 #ESK #GKI2
 ```Kernel Info
