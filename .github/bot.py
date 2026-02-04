@@ -12,7 +12,6 @@ BETTER_NET = os.environ.get("BETTER_NET")
 REKERNEL = os.environ.get("REKERNEL")
 BBG = os.environ.get("BBG")
 LXC = os.environ.get("LXC")
-ZRAM = os.environ.get("ZRAM")
 SSG = os.environ.get("SSG")
 STOCK_CONFIG = os.environ.get("STOCK_CONFIG")
 
@@ -31,7 +30,6 @@ BBG: {bbg}
 Re:Kernel: {rekernel}
 Mountify support: true
 lxc/docker support {lxc}
-lz4+zstd: {zram}
 SSG speed controller: {ssg}
 better net support: {better_net}
 ```
@@ -51,7 +49,6 @@ def get_caption():
         lxc=LXC,
         bbg=BBG,
         better_net=BETTER_NET,
-        zram=ZRAM,
         run_url=RUN_URL,
     )
     return msg
