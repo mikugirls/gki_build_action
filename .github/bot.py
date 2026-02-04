@@ -22,7 +22,6 @@ RUN_URL = os.environ.get("RUN_URL")
 BOT_CI_SESSION = os.environ.get("BOT_CI_SESSION")
 MSG_TEMPLATE = """
 **New Build Published!**
-#ESK #GKI2
 ```Kernel Info
 kernelver: {kernelversion}
 stock: {stock}
@@ -37,7 +36,7 @@ SSG speed controller: {ssg}
 better net support: {better_net}
 ```
 Please follow @@esk_gki_build !
-
+#GKI2 #ESK
 [Workflow run]({run_url})
 """.strip()
 
